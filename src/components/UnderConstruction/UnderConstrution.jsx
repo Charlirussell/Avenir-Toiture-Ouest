@@ -1,9 +1,13 @@
+import constructionLogo from '../../assets/images/large-logo.svg';
+
 import './UnderConstruction.scss';
+
 
 const UnderConstruction = () => {
     return (
         <main className='construction-container'>
             <div className='construction-content'>
+                <img src={constructionLogo} alt='Logo Avenir Toiture Ouest' />
                 <div className='construction-text'>
                     <h1>🚧 Site en cours de construction 🚧</h1>
                     <h4>

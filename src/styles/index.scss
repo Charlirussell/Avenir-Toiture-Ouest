@@ -42,19 +42,19 @@ a {
 /*Text Sizing*/
 
 h1 {
-  font-size: 4em,
+  font-size: 2.5em,
 }
 
 h2 {
-  font-size: 3em;
-}
-
-h3 {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 1.8em;
+}
+
 h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 h5,p {
@@ -71,9 +71,9 @@ h6 {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 1.5em;
+  font-size: 1em;
 
-  padding: 0.6rem 1.2rem;
+  padding: 0em 0.5em 0em 0.5em;
   margin-top: 0.5em;
   border-radius: 999px;
 

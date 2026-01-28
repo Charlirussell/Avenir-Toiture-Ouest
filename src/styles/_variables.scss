@@ -4,6 +4,10 @@ $blue-primary: #0aa4c7;        // Main cyan/blue (background, sections)
 $blue-dark: #0b6f8a;           // Darker blue (gradients, overlays)
 $blue-light: #e6f7fb;          // Very light blue (background, sections)
 
+$blue-center:  #02C3F1;        // Lightest center glow
+$blue-mid:     #01b8e9;        // Mid transition
+$blue-edge:    #0197c8;        // Edge vignette
+
 $white: #ffffff;               // Main page background
 $off-white: #f9fafb;           // Alternate section background
 
@@ -41,11 +45,10 @@ $shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
 $shadow-card: 0 6px 18px rgba(0, 0, 0, 0.06);
 
 /* Gradients */
-$gradient-main: linear-gradient(
-  90deg,
-  rgba(10, 164, 199, 0.95) 0%,
-  rgba(10, 164, 199, 0.75) 45%,
-  rgba(10, 164, 199, 0.2) 100%
+$gradient-main: radial-gradient(
+  $blue-center 0%,
+  $blue-mid 45%,
+  $blue-edge 100%
 );
 
 $gradient-section: linear-gradient(
