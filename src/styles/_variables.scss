@@ -1,0 +1,55 @@
+/*Backgrounds*/
+
+$blue-primary: #0aa4c7;        // Main cyan/blue (background, sections)
+$blue-dark: #0b6f8a;           // Darker blue (gradients, overlays)
+$blue-light: #e6f7fb;          // Very light blue (background, sections)
+
+$white: #ffffff;               // Main page background
+$off-white: #f9fafb;           // Alternate section background
+
+/* Fonts */
+$font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+$font-secondary: 'Poppins', system-ui, sans-serif;
+
+$text-black: #0f172a;          // Headings
+$text-dark: #1e293b;           // Body text
+$text-muted: #64748b;          // Secondary text
+$text-light: #ffffff;          // Text on dark backgrounds
+
+/* Buttons */
+$button-primary-bg: #ffcc00;   // Main CTA (Devis gratuit)
+$button-primary-hover: #e6b800;
+$button-primary-text: #0f172a;
+
+$button-secondary-bg: transparent;
+$button-secondary-border: #ffffff;
+$button-secondary-text: #ffffff;
+
+/* Colours */
+$yellow-primary: #ffcc00;      // Highlights, icons, CTA accents
+$yellow-soft: #fff3bf;
+
+$success: #22c55e;             // Validation / check icons
+$error: #ef4444;               // Errors
+$warning: #f59e0b;             // Warnings
+
+$border-light: #e5e7eb;        // Cards, separators
+
+/* Shadows */
+
+$shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+$shadow-card: 0 6px 18px rgba(0, 0, 0, 0.06);
+
+/* Gradients */
+$gradient-main: linear-gradient(
+  90deg,
+  rgba(10, 164, 199, 0.95) 0%,
+  rgba(10, 164, 199, 0.75) 45%,
+  rgba(10, 164, 199, 0.2) 100%
+);
+
+$gradient-section: linear-gradient(
+  180deg,
+  $blue-primary 0%,
+  $blue-dark 100%
+);

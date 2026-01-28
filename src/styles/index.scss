@@ -1,6 +1,62 @@
 @use 'reset';
 @use '/src/styles/variables' as v;
 
-h1 {
-    color: black;
+/*Body*/
+
+body {
+  color: v.$text-light;
+  background-color: v.$blue-primary;
+  line-height: 1.6;
+}
+
+.bg-light {
+  background-color: v.$blue-light;
+}
+
+.bg-dark {
+  background-color: v.$blue-dark;
+}
+
+/*Text*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: v.$text-light;
+}
+p {
+  color: v.$text-light;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-muted {
+  color: v.$text-muted;
+}
+
+/*Buttons*/
+.small-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+
+  background-color: v.$button-primary-bg;
+  color: v.$button-primary-text;
+
+  box-shadow: v.$shadow-soft;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    background-color: v.$button-primary-hover;
+    transform: translateY(-1px);
+  }
 }
