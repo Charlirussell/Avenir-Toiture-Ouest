@@ -1,1 +1,42 @@
 @use '/src/styles/variables' as v;
+
+.construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+}
+.construction-container img {
+  width: 50%; 
+  height: auto; 
+}
+
+.construction-content {
+  text-align: center;
+}
+
+.construction-text {
+  margin-top: 5em;
+  font-weight: 900;
+  line-height: 3.5em;
+
+}
+
+.construction-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+
+  .construction-container img {
+    width: 98%;
+    max-width: auto;
+  }
+  .construction-text {
+    margin-top: 2em;
+    font-size: 0.5em;
+  }
+}

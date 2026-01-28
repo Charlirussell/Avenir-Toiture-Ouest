@@ -6,9 +6,9 @@ const UnderConstruction = () => {
             <div className='construction-content'>
                 <div className='construction-text'>
                     <h1>🚧 Site en cours de construction 🚧</h1>
-                    <p>
+                    <h4>
                         🔜 Nous travaillons actuellement sur ce site. Veuillez revenir plus tard 🔜
-                    </p>
+                    </h4>
                     <div className='construction-actions'>
                         <a
                         className='small-button'
