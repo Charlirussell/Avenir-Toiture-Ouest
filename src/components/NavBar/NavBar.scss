@@ -1,0 +1,40 @@
+@use '/src/styles/variables' as v;
+
+.navbar {
+  display: flex;
+  padding: 4em 7em 0 0;
+}
+
+.navlinks {
+  display: flex;
+  gap: 1em;
+  margin-left: auto;
+  font-size: 2em;
+  padding: 1em;
+  border-radius: 2em;
+  color: v.$text-black;
+  background-color: v.$white;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Media Queries*/ 
+
+@media (max-width: 768px) {
+
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+
+    .navlinks {
+        display: none;
+        flex-direction: column;
+    }
+
+  .navlinks.is-open {
+    display: flex;
+  }
+}
