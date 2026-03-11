@@ -101,6 +101,7 @@ h6 {
 
   padding: 0em 0.8em 0em 0.8em;
   border-radius: 0.5em;
+  border-color: v.$button-secondary-bg;
 
   background-color: v.$button-primary-bg;
   color: v.$button-primary-text;
@@ -115,7 +116,7 @@ h6 {
 }
 
 
-.phone {
+.phone-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +128,7 @@ h6 {
   background-color: v.$button-secondary-bg;
   color:v.$button-secondary-text;
 
-  box-shadow: v.$shadow-soft;
+  text-shadow: v.$shadow-soft;
   transition: background-color 0.25s ease, transform 0.25s ease;
 
     &:hover {
