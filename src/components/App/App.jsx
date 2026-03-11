@@ -1,5 +1,6 @@
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
+import Services from '../Services/Services';
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction';
 
@@ -19,6 +20,7 @@ const App = () => {
             <>
               <NavBar />
               <Home />
+              <Services />
               <Footer />
             </>
           )}

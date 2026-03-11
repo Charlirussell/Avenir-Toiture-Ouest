@@ -12,7 +12,7 @@ const Home = () => {
             <div className='home-buttons'>
                 <button className='quote-button'>Devis Gratuit</button>
                 <a className="phone-button" href="tel:0780627064">07 80 62 70 64</a>
-                <button className='services'>Nos Services</button>
+                <button className='services-button'>Nos Services</button>
             </div>
             </div>
         </section>
