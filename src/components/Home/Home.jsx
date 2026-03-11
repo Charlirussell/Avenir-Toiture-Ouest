@@ -4,7 +4,7 @@ import './Home.scss';
 
 const Home = () => {
     return (
-        <section className='home'>
+        <section id='home' className='home'>
             <img className='home-img' src={HomeImg} alt='home background' />
             <div className='home-content'>
                 <h1 className='header'>Votre couvreur en Bretagne</h1>

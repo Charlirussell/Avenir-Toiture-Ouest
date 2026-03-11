@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Banner from '../../assets/images/Banner-ATO.svg';
 
@@ -27,26 +26,27 @@ const NavBar = () => {
 
     return (
         <div className='navbar-wrap'>
-            <NavLink to='/' className='banner'>
-                <img src={Banner} alt="Navbar Logo" />
-            </NavLink>
+            <a href="#home" className='banner' onClick={handleLinkClick}>
+                <img src={Banner} alt="Avenir Toiture Ouest Logo" />
+            </a>
+
             <nav className='navbar'>
-                {/*Hamburger Buttoon*/}
                 <button
                     type='button'
                     className='hamburger'
                     onClick={toggleMenu}
                     aria-expanded={isOpen}
-                    aria-label={isOpen ? 'close' : 'open'}
+                    aria-label={isOpen ? 'close menu' : 'open menu'}
                 >
                     ☰
                 </button>
+
                 <div className={`navlinks ${isOpen ? 'is-open' : ''}`}>
-                    <NavLink to="/"className={({ isActive }) =>isActive ? "menu menu--active" : "menu"}onClick={handleLinkClick}>Accueil</NavLink>
-                    <NavLink to="/services"className={({ isActive }) =>isActive ? "menu menu--active" : "menu"}onClick={handleLinkClick}>Nos Services</NavLink>
-                    <NavLink to="/realisations"className={({ isActive }) =>isActive ? "menu menu--active" : "menu"}onClick={handleLinkClick}>Réalisations</NavLink>
-                    <NavLink to="/reviews"className={({ isActive }) =>isActive ? "menu menu--active" : "menu"}onClick={handleLinkClick}>Avis</NavLink>
-                    <NavLink to="/contact" className="small-button" onClick={handleLinkClick}>Contact</NavLink>
+                    <a href="#home" className="menu" onClick={handleLinkClick}>Accueil</a>
+                    <a href="#services" className="menu" onClick={handleLinkClick}>Nos Services</a>
+                    <a href="#realisations" className="menu" onClick={handleLinkClick}>Réalisations</a>
+                    <a href="#reviews" className="menu" onClick={handleLinkClick}>Avis</a>
+                    <a href="#contact" className="small-button" onClick={handleLinkClick}>Contact</a>
                 </div>
             </nav>
         </div>

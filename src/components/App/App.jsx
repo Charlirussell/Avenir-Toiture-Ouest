@@ -1,5 +1,3 @@
-import { Routes, Route } from 'react-router-dom';
-
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import Footer from '../Footer/Footer';
@@ -15,22 +13,18 @@ const App = () => {
     
   return (
     <div className="app">
-      {isUnderConstruction ? (
-        <Routes>
-          <Route path="*" element={<UnderConstruction />} />
-        </Routes>
-      ) : (
-        <>
-          <NavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          {isUnderConstruction ? (
+            <UnderConstruction />
+          ) : (
+            <>
+              <NavBar />
+              <Home />
+              <Footer />
+            </>
+          )}
+        </div>
+      );
+    };
 
-          <Footer />
-        </>
-      )}
-    </div>
-  );
-};
 
 export default App;

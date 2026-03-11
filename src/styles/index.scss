@@ -3,10 +3,19 @@
 
 /*Body*/
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   color: v.$text-light;
   background-color: v.$blue-primary;
   line-height: 1.6;
+}
+
+section {
+  scroll-margin-top: 120px;
 }
 
 .bg-light {
