@@ -72,6 +72,8 @@ h6 {
   justify-content: center;
   gap: 0.5rem;
   font-size: 1em;
+  font-weight: bolder;
+  max-width: 10em;
 
   padding: 0em 0.8em 0em 0.8em;
   border-radius: 0.5em;
@@ -84,6 +86,76 @@ h6 {
 
   &:hover {
     background-color: v.$button-primary-hover;
+    transform: translateY(-1px);
+  }
+}
+
+.quote-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1em;
+  font-weight: bolder;
+  max-width: 10em;
+
+  padding: 0em 0.8em 0em 0.8em;
+  border-radius: 0.5em;
+
+  background-color: v.$button-primary-bg;
+  color: v.$button-primary-text;
+
+  box-shadow: v.$shadow-soft;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    background-color: v.$button-primary-hover;
+    transform: translateY(-1px);
+  }
+}
+
+
+.phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8em;
+  font-weight: bolder;
+  border: none;
+  max-width: 6.5em;
+
+  background-color: v.$button-secondary-bg;
+  color:v.$button-secondary-text;
+
+  box-shadow: v.$shadow-soft;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+    color: v.$button-primary-hover;
+    transform: translateY(-1px);
+  }
+
+}
+
+.services {
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  font-weight: bolder;
+  border: none;
+  max-width: 6.5em;
+
+  background-color: v.$button-services-bg;
+  color: v.$button-services-text;
+  
+  padding: 0.1em 0.4em 0.1em 0.4em;
+  border-radius: 0.5em;
+
+    &:hover {
+    color: v.$button-services-test-hover;
+    background-color: v.$button-services-hover;
     transform: translateY(-1px);
   }
 }
