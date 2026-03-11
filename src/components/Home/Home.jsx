@@ -5,7 +5,7 @@ import './Home.scss';
 const Home = () => {
     return (
         <div className='home-main'>
-            <img src={HomeImg} alt='home-img' />
+            <img className='home-img' src={HomeImg} alt='home background' />
         </div>
     )
 }
