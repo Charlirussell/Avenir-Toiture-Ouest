@@ -9,7 +9,7 @@
   display: flex;
   gap: 1em;
   margin-left: auto;
-  font-size: 2em;
+  font-size: 1em;
   padding: 1em;
   border-radius: 2em;
   color: v.$text-black;
@@ -24,7 +24,7 @@
 
 @media (max-width: 768px) {
 
-    .hamburger{
+    .hamburger {
         display: block;
         margin-left: auto;
     }
