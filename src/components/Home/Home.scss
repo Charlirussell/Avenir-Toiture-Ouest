@@ -17,6 +17,37 @@
     display: block;
 }
 
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background: linear-gradient(
+        90deg,
+        rgba(v.$blue-center, 0.92) 0%,
+        rgba(v.$blue-mid, 0.85) 18%,
+        rgba(v.$blue-mid, 0.65) 32%,
+        rgba(v.$blue-edge, 0.40) 45%,
+        rgba(v.$blue-edge, 0.18) 55%,
+        rgba(v.$blue-edge, 0) 65%
+    );
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: rgba(0, 195, 241, 0.16);
+    filter: blur(30px);
+}
+
 .home-content {
     position: relative;
     z-index: 2;
