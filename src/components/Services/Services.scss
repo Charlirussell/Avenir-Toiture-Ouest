@@ -9,21 +9,22 @@
 
 }
 
-.services-header {
+.services-header, .services-paragraph, .services-title, .services-text {
     color: v.$text-black;
 }
 
-.services-paragraph {
-    color: v.$text-black;
-}
-
-.services-icons {
-    flex-direction: row;
-    justify-content: space-around;
-
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2em;
 }
 
 .services-one, .services-two, .services-three {   
-    width: 10%;
-    height: 10%
+    width: 55%;
+    height: 60%
+}
+
+.services-two {
+    transform: translateY(-22px);
 }
