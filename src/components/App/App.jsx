@@ -1,6 +1,7 @@
 import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import Services from '../Services/Services';
+import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction';
 
@@ -21,6 +22,7 @@ const App = () => {
               <NavBar />
               <Home />
               <Services />
+              <Contact />
               <Footer />
             </>
           )}
