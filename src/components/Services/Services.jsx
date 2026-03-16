@@ -1,5 +1,5 @@
-import ServicesOne from '../../assets/icons/repairs-icon.svg';
-import ServicesTwo from '../../assets/icons/gutters-icon.svg';
+import ServicesOne from '../../assets/icons/gutters-icon.svg';
+import ServicesTwo from '../../assets/icons/repairs-icon.svg';
 import ServicesThree from '../../assets/icons/maintenance-icon.svg';
 
 import './Services.scss';
