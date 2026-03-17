@@ -1,1 +1,58 @@
 @use '/src/styles/variables' as v;
+
+.contact-wrapper {
+    display: flex;
+}
+
+.contact-left {
+    flex: 1;
+    margin-left: 3em;
+}
+
+.contact-right {
+    position: relative;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 2rem;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.45),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+.contact-right::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.38) 0%,
+        rgba(255, 255, 255, 0.16) 18%,
+        rgba(255, 255, 255, 0.06) 38%,
+        rgba(255, 255, 255, 0.02) 55%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    pointer-events: none;
+}
+
+.contact-right::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.03)
+    );
+    filter: blur(18px);
+    z-index: -1;
+}
+
+.contact-form {
+    
+}
