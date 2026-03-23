@@ -1,2 +1,150 @@
 @use '/src/styles/variables' as v;
 
+.reviews {
+    background: #ffffff;
+    padding: 5rem 2rem;
+}
+
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 1rem;
+}
+
+.reviews-subtitle {
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.reviews-slider {
+    background: linear-gradient(135deg, #02c3f1, #01b8e9, #0197c8);
+    border-radius: 2rem;
+    padding: 2.5rem 2rem 3rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-slide {
+        height: inherit;
+    }
+
+    .slick-slide > div {
+        height: 100%;
+    }
+
+    .slick-dots {
+        bottom: 10px;
+    }
+
+    .slick-dots li button:before {
+        font-size: 10px;
+        color: #ffffff;
+        opacity: 0.5;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #ffffff;
+        opacity: 1;
+    }
+
+    .slick-prev,
+    .slick-next {
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: #f2c500;
+        font-size: 40px;
+    }
+
+    .slick-prev {
+        left: -45px;
+    }
+
+    .slick-next {
+        right: -45px;
+    }
+}
+
+.review-slide {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.review-card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.review-stars {
+    font-size: 1.3rem;
+    color: #f2c500;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.review-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1f1f1f;
+    margin-bottom: 0.25rem;
+}
+
+.review-location {
+    font-size: 0.95rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: v.$text-muted;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 4rem 1rem;
+    }
+
+    .reviews-title {
+        font-size: 2.2rem;
+    }
+
+    .reviews-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .reviews-slider {
+        padding: 2rem 1rem 3rem;
+        border-radius: 1.5rem;
+    }
+
+    .review-card {
+        min-height: auto;
+    }
+}
