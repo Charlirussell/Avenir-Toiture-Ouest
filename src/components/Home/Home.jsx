@@ -11,8 +11,8 @@ const Home = () => {
                 <p className='header-paragraph'><span>Avenir Toiture Ouest</span> - Artisan couvreur à votre service pour tous vos travaux de toiture : réparation, zinguerie, entretien et pose de gouttières à Carhaix-Plouguer et aux alentours.</p>
             <div className='home-buttons'>
                 <a className="phone-button" href="tel:0780627064">07 80 62 70 64</a>
-                <button className='quote-button'>Devis Gratuit</button>
-                <button className='services-button'>Nos Services</button>
+                <a href="#contact" className="quote-button">Devis Gratuit</a>
+                <a href="#services" className="services-button">Nos Services</a>
             </div>
             </div>
         </section>
