@@ -1,9 +1,19 @@
+import Banner from '../../assets/images/Banner-ATO.svg';
+
 import './Terms.scss';
 
 const Terms = () => {
     return (
         <section id='terms' className='terms'>
- <h1 className='terms-title'>
+
+            <a href="/#home" className='legal-banner'>
+                <img
+                    src={Banner}
+                    alt="Avenir Toiture Ouest Logo"
+                />
+            </a>
+
+            <h1 className='terms-title'>
                 Mentions légales
             </h1>
 

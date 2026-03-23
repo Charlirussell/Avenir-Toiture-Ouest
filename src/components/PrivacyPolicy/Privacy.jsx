@@ -1,8 +1,17 @@
+import Banner from '../../assets/images/Banner-ATO.svg';
 import './Privacy.scss';
 
 const Privacy = () => {
     return (
         <section id='privacy' className='privacy'>
+
+            <a href="/#home" className='legal-banner'>
+                <img
+                    src={Banner}
+                    alt="Avenir Toiture Ouest Logo"
+                />
+            </a>
+
             <h1 className='privacy-title'>
                 Politique de confidentialité
             </h1>
