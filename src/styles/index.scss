@@ -100,25 +100,22 @@ h6 {
 }
 
 .quote-button {
+
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bolder;
-  max-width: 10em;
-
-  padding: 0em 0.8em 0em 0.8em;
-  border-radius: 0.5em;
-  border-color: v.$button-secondary-bg;
+  border: none;
+  max-width: 8em;
 
   background-color: v.$button-primary-bg;
   color: v.$button-primary-text;
 
-  box-shadow: v.$shadow-soft;
-  transition: background-color 0.25s ease, transform 0.25s ease;
+  padding: 0.6em 1em;
+  border-radius: 0.5em;
 
-  &:hover {
+    &:hover {
     background-color: v.$button-primary-hover;
     transform: translateY(-1px);
   }
@@ -129,10 +126,11 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: bolder;
   border: none;
-  max-width: 6.5em;
+  max-width: 8em;
+  margin-left: 0.4rem;
 
   background-color: v.$button-secondary-bg;
   color:v.$button-secondary-text;
@@ -155,12 +153,12 @@ h6 {
   font-size: 1.6em;
   font-weight: bolder;
   border: none;
-  max-width: 6.5em;
+  max-width: 8em;
 
   background-color: v.$button-services-bg;
   color: v.$button-services-text;
-  
-  padding: 0.1em 0.4em 0.1em 0.4em;
+
+  padding: 0.6em 1em;
   border-radius: 0.5em;
 
     &:hover {

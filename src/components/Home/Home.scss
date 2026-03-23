@@ -1,18 +1,20 @@
 @use '/src/styles/variables' as v;
 
 .home {
-  position: relative;
-  width: 100%;
-  min-height: 75vh;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .home-img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home::before {
@@ -21,7 +23,6 @@
     inset: 0;
     z-index: 1;
     pointer-events: none;
-
     background: linear-gradient(
         90deg,
         rgba(v.$blue-center, 0.92) 0%,
@@ -38,23 +39,106 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 42%;
+    width: 45%;
     height: 100%;
     z-index: 1;
     pointer-events: none;
-    background: rgba(0, 195, 241, 0.16);
-    filter: blur(30px);
+    background: rgba(0, 195, 241, 0.18);
+    filter: blur(40px);
 }
 
 .home-content {
     position: relative;
     z-index: 2;
-    max-width: 50em;
-    padding: 10rem 6rem;
+    max-width: 650px;
+    padding: 9rem 2rem 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.header {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: white;
+    margin: 0;
+}
+
+.header-paragraph {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    max-width: 34rem;
+}
+
+.header-paragraph span {
+    font-weight: 700;
 }
 
 .home-buttons {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    gap: 1em;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.header,
+.header-paragraph,
+.phone-button {
+  text-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.home-buttons .quote-button,
+.home-buttons .services-button,
+.home-buttons .phone-button {
+    width: fit-content;
+}
+
+.home-buttons .phone-button {
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .home {
+        min-height: 85vh;
+        align-items: flex-start;
+    }
+
+    .home::before {
+    background: linear-gradient(
+      180deg,
+      rgba(v.$blue-center, 0.1) 0%,
+      rgba(v.$blue-mid, 0.3) 100%
+    );
+    }
+
+    .home-content {
+        padding: 7rem 1.25rem 2.5rem 1.25rem;
+        max-width: 100%;
+        gap: 1rem;
+    }
+
+    .header {
+        font-size: 3rem;
+        max-width: 12ch;
+    }
+
+    .header-paragraph {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .home-buttons {
+        gap: 0.85rem;
+        margin-top: 0.75rem;
+    }
+
+    .home-img {
+        object-position: 20%;
+    }
 }

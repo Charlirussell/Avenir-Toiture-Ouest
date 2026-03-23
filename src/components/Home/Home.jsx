@@ -7,11 +7,11 @@ const Home = () => {
         <section id='home' className='home'>
             <img className='home-img' src={HomeImg} alt='home background' />
             <div className='home-content'>
-                <h1 className='header'>Votre couvreur en Bretagne</h1>
+                <h1 className='header'>Votre Couvreur en Bretagne</h1>
                 <p className='header-paragraph'><span>Avenir Toiture Ouest</span> - Artisan couvreur à votre service pour tous vos travaux de toiture : réparation, zinguerie, entretien et pose de gouttières à Carhaix-Plouguer et aux alentours.</p>
             <div className='home-buttons'>
-                <button className='quote-button'>Devis Gratuit</button>
                 <a className="phone-button" href="tel:0780627064">07 80 62 70 64</a>
+                <button className='quote-button'>Devis Gratuit</button>
                 <button className='services-button'>Nos Services</button>
             </div>
             </div>
