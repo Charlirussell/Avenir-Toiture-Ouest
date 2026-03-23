@@ -1,1 +1,32 @@
 @use '/src/styles/variables' as v;
+
+.privacy {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
+
+.privacy h1 {
+    color: v.$yellow-primary;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.privacy h2 {
+    color: v.$yellow-soft;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.privacy p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.privacy li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
