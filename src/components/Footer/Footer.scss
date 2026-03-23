@@ -1,7 +1,28 @@
 @use '/src/styles/variables' as v;
 
 .footer {
-  margin-top: auto;
-  padding: 1rem;
-  align-self: center;
+    background: v.$blue-primary;   
+    color: v.$text-light;
+    padding: 3rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
