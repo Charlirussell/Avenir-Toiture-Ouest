@@ -26,8 +26,6 @@ const App = () => {
             ) : (
 
               <Routes>
-
-                {/* MAIN ONE-PAGE SITE */}
                 <Route
                   path="/"
                   element={
@@ -50,9 +48,7 @@ const App = () => {
                   element={<Terms />}
                 />
               </Routes>
-
             )}
-
           </div>
         );
       };
