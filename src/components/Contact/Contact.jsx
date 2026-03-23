@@ -22,7 +22,7 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contact'>
-            <h2>Contactez-nous pour un devis gratuit</h2>
+            <h2 className='contact-title'>Contactez-nous pour un devis gratuit</h2>
             <form className='contact-form' onSubmit={onSubmit}>
                 <input type='text' name='name' placeholder='Nom' required />
                 <input type='email' name='email' placeholder='Email' required />
