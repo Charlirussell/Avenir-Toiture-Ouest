@@ -44,7 +44,6 @@ const NavBar = () => {
                 <div className={`navlinks ${isOpen ? 'is-open' : ''}`}>
                     <a href="#home" className="menu" onClick={handleLinkClick}>Accueil</a>
                     <a href="#services" className="menu" onClick={handleLinkClick}>Nos Services</a>
-                    <a href="#realisations" className="menu" onClick={handleLinkClick}>Réalisations</a>
                     <a href="#reviews" className="menu" onClick={handleLinkClick}>Avis</a>
                     <a href="#contact" className="small-button" onClick={handleLinkClick}>Contact</a>
                 </div>
