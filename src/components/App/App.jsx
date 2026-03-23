@@ -2,10 +2,12 @@ import NavBar from '../NavBar/NavBar';
 import Home from '../Home/Home';
 import Services from '../Services/Services';
 import Contact from '../Contact/Contact'
+import Reviews from '../Reviews/Reviews';
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction';
 
 import './App.scss';
+
 
 
 const App = () => {
@@ -23,6 +25,7 @@ const App = () => {
               <Home />
               <Services />
               <Contact />
+              <Reviews />
               <Footer />
             </>
           )}
