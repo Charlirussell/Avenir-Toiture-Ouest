@@ -6,6 +6,7 @@ import Contact from '../Contact/Contact'
 import Reviews from '../Reviews/Reviews';
 import Footer from '../Footer/Footer';
 import Privacy from '../PrivacyPolicy/Privacy';
+import Terms from '../Terms/Terms';
 import UnderConstruction from '../UnderConstruction/UnderConstruction';
 
 import './App.scss';
@@ -43,6 +44,10 @@ const App = () => {
                 <Route
                   path="/mentions-legales"
                   element={<Privacy />}
+                />
+                <Route
+                  path="/politique-confidentialite"
+                  element={<Terms />}
                 />
               </Routes>
 
