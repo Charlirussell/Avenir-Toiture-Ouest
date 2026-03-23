@@ -40,11 +40,11 @@ const App = () => {
                   }
                 />
                 <Route
-                  path="/mentions-legales"
+                  path="/politique-confidentialite"
                   element={<Privacy />}
                 />
                 <Route
-                  path="/politique-confidentialite"
+                  path="/mentions-legales"
                   element={<Terms />}
                 />
               </Routes>

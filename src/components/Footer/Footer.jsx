@@ -9,6 +9,7 @@ const Footer = () => {
             <li><a href='#home'>Accueil</a></li>
             <li><a href='#services'>Nos Services</a></li>
             <li><a href='#contact'>Contact</a></li>
+            <li><a href='/politique-confidentialite'>Politique de confidentialité</a></li>
             <li><a href='/mentions-legales'>Mentions Legales</a></li>
         </ul>
         <p className="footer-copyright">
