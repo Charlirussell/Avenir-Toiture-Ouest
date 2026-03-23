@@ -32,13 +32,13 @@ const NavBar = () => {
 
             <nav className='navbar'>
                 <button
-                    type='button'
-                    className='hamburger'
-                    onClick={toggleMenu}
-                    aria-expanded={isOpen}
-                    aria-label={isOpen ? 'close menu' : 'open menu'}
+                type='button'
+                className={`hamburger ${isOpen ? 'is-hidden' : ''}`}
+                onClick={toggleMenu}
+                aria-expanded={isOpen}
+                aria-label={isOpen ? 'close menu' : 'open menu'}
                 >
-                    ☰
+                ☰
                 </button>
 
                 <div className={`navlinks ${isOpen ? 'is-open' : ''}`}>
