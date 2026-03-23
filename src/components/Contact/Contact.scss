@@ -1,15 +1,6 @@
 @use '/src/styles/variables' as v;
 
-.contact-wrapper {
-    display: flex;
-}
-
-.contact-left {
-    flex: 1;
-    margin-left: 3em;
-}
-
-.contact-right {
+.contact-form {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;

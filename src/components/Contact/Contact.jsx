@@ -22,30 +22,15 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contact'>
-            <div className='contact-overlay'>
-                <div className='contact-wrapper'>
-                    <div className='contact-left'>
-                        <h2>Liens</h2>
-                        <ul className='contact-links'>
-                            <li><a href="https://www.facebook.com/avenirtoitureouest" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                            <li><a href='#home'>Accueil</a></li>
-                            <li><a href='#services'>Nos Services</a></li>
-                            <li><a href='#contact'>Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className='contact-right'>
-                        <h2>Contactez-nous pour un devis gratuit</h2>
-                        <form className='contact-form' onSubmit={onSubmit}>
-                            <input type='text' name='name' placeholder='Nom' required />
-                            <input type='email' name='email' placeholder='Email' required />
-                            <input type='tel' name='phone' placeholder='Numéro' />
-                            <textarea name='message' placeholder='Veuillez indiquer les services requis' required></textarea>
-                            <button type='submit'>Demander un devis gratuit</button>
-                            {result && <p className='contact-result'>{result}</p>}
-                        </form>
-                    </div>
-                </div>
-            </div>
+            <h2>Contactez-nous pour un devis gratuit</h2>
+            <form className='contact-form' onSubmit={onSubmit}>
+                <input type='text' name='name' placeholder='Nom' required />
+                <input type='email' name='email' placeholder='Email' required />
+                <input type='tel' name='phone' placeholder='Numéro' />
+                <textarea name='message' placeholder='Veuillez indiquer les services requis' required></textarea>
+                <button type='submit'>Demander un devis gratuit</button>
+                {result && <p className='contact-result'>{result}</p>}
+            </form>
         </section>
     )
 }
